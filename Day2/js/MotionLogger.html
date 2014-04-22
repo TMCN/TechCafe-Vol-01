@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>MotionLoger</title>
+    <script src="http://js.leapmotion.com/0.2.0-beta1/leap.min.js"></script>
+    <script>
+      var controller = new Leap.Controller({enableGestures: true});
+      controller.loop(function(frame) {
+        var line = 
+          "<div>" + frame.id + "," + frame.timestamp + "," + frame.hands.length + "," 
+          + frame.fingers.length + "," + frame.tools.length + "," + frame.gestures.length;
+
+        if (frame.hands.length > 0) {
+          var hand = frame.hands[0];
+          var fingers = hand.fingers;
+          if (fingers.length > 0) {
+            var x = 0, y = 0, z = 0;
+            for (var i = 0; i < fingers.length; i++) {
+              x += fingers[i].tipPosition[0];
+              y += fingers[i].tipPosition[1];
+              z += fingers[i].tipPosition[2];
+            }
+            x /= fingers.length;
+            y /= fingers.length;
+            z /= fingers.length;
+            line += ("," + x + "," + y + "," + z);
+          }
+        } else {
+          line += ",0,0,0";
+        }
+        line += "</div>";
+        document.getElementById('out').innerHTML += line;
+      });
+    </script>
+  </head>
+  <body>
+    <div id="out"><div>id,timestamp,hands,fingers,tools,gestures,position_x,position_y,position_z</div></div>
+  </body>
+</html>

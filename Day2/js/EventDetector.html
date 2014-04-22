@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>EventDetector</title>
+    <script src="http://js.leapmotion.com/0.2.0-beta1/leap.min.js"></script>
+    <script>
+      var checkedTime = new Date(2014, 0, 1);
+      var checkedFrame = null;
+
+      var controller = new Leap.Controller({enableGestures: true});
+      controller.loop(function(frame) {
+        if (frame.hands.length > 0) {
+          if ((new Date().getTime() - checkedTime.getTime()) > 500) {
+            if (checkedFrame != null) {
+              var diff = frame.hands[0].translation(checkedFrame);
+              if (diff[0] > 150) {
+                document.getElementById('out').innerHTML += "<div>右フリックしました！ :" + diff[0];
+              }
+              if (diff[0] < -150) {
+                document.getElementById('out').innerHTML += "<div>左フリックしました！ :" + diff[0];
+              }
+            }
+            checkedTime = new Date();
+            checkedFrame = frame;
+          }
+        }
+     });
+    </script>
+  </head>
+  <body>
+    <div id="out"></div>
+  </body>
+</html>
