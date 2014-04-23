@@ -17,10 +17,10 @@ http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how
 ####.NET(VB/C#)
 http://azure.microsoft.com/en-us/documentation/articles/mobile-services-windows-dotnet-how-to-use-client-library/
 
-###AzureMobileServiceに
-###VB.NET
+###AzureMobileServiceに接続するためのサンプル
+###.NET(VB)
 AzureModel.vb
-###C#
+###.NET(C#)
 AzureModel.cs
 
 ###アクセスURL
