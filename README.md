@@ -17,6 +17,12 @@ http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how
 ####.NET(VB/C#)
 http://azure.microsoft.com/en-us/documentation/articles/mobile-services-windows-dotnet-how-to-use-client-library/
 
+###AzureMobileServiceに
+###VB.NET
+AzureModel.vb
+###C#
+AzureModel.cs
+
 ###アクセスURL
 https://leapcloud.azure-mobile.net/Tables/TodoItem/
 
