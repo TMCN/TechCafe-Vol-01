@@ -11,6 +11,13 @@ Tokyo MotionControl Network tech-cafe Vol.01で使用したコードです
 
 ##Day3 関連情報
 
+###Azure MobileServiceに接続するためのライブラリ
+####JavaScript:
+http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
+####.NET(VB/C#)
+http://azure.microsoft.com/en-us/documentation/articles/mobile-services-windows-dotnet-how-to-use-client-library/
+
+###アクセスURL
 https://leapcloud.azure-mobile.net/Tables/TodoItem/
 
 https://leapcloud.azure-mobile.net/Tables/UserItem/
