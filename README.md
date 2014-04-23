@@ -19,9 +19,9 @@ http://azure.microsoft.com/en-us/documentation/articles/mobile-services-windows-
 
 ###AzureMobileServiceに接続するためのサンプル
 ###.NET(VB)
-AzureModel.vb
+https://github.com/TMCN/TechCafe-Vol-01/blob/master/AzureModel.vb
 ###.NET(C#)
-AzureModel.cs
+https://github.com/TMCN/TechCafe-Vol-01/blob/master/AzureModel.cs
 
 ###アクセスURL
 https://leapcloud.azure-mobile.net/Tables/TodoItem/
