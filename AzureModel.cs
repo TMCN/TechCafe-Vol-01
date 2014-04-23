@@ -1,4 +1,4 @@
-Enter file contents hereusing Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
