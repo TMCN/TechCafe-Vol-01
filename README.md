@@ -1,10 +1,13 @@
 TechCafe-Vol-01
 ===============
 
-Tokyo MotionControl Network tech-cafe Vol.01で使用したコードです
+[Tokyo MotionControl Network tech-cafe Vol.01](http://kokucheese.com/event/index/157654/)で使用したコードです。
 
 ##Day1 関連情報
 
+BuildInsiderでの記事(参考情報)
+ * [連載：C++で始めるLeap Motion開発 ―― タッチUIの先のカタチ ――](http://www.buildinsider.net/small/leapmotioncpp)
+ * [連載：Leap Motion開発入門（C#編）](http://www.buildinsider.net/small/leapmotioncs)
 
 ##Day2 関連情報
 
