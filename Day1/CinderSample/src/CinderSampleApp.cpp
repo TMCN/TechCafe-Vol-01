@@ -1,4 +1,4 @@
-#include "cinder/app/AppNative.h"
+ï»¿#include "cinder/app/AppNative.h"
 #include "cinder/gl/gl.h"
 #include "cinder/Camera.h"
 
@@ -26,19 +26,19 @@ class CinderSampleApp : public AppNative {
 
 void CinderSampleApp::setup()
 {
-  // ƒEƒBƒ“ƒhƒE‚ÌˆÊ’u‚ÆƒTƒCƒY‚ğİ’è
+  // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ä½ç½®ã¨ã‚µã‚¤ã‚ºã‚’è¨­å®š
   setWindowPos(50, 50);
   setWindowSize(1280, 700);
 
-  // ƒJƒƒ‰(‹“_)‚Ìİ’è
+  // ã‚«ãƒ¡ãƒ©(è¦–ç‚¹)ã®è¨­å®š
   float y = 250;
   mCam.setPerspective( 60.0f, getWindowAspectRatio(), 5.0f, 3000.0f );
   mCam.lookAt( Vec3f( 0.0f, y, 500.0f ), Vec3f( 0.0f, y, 0.0f ), Vec3f( 0.0f, 1.0f, 0.0f ) );
 
-  // •`‰æ‚É‰œs‚«‚Ìl—¶‚ğ—LŒø‚É‚·‚é
+  // æç”»æ™‚ã«å¥¥è¡Œãã®è€ƒæ…®ã‚’æœ‰åŠ¹ã«ã™ã‚‹
   gl::enableDepthRead();
 
-  // ŒõŒ¹‚ğ’Ç‰Á‚·‚é
+  // å…‰æºã‚’è¿½åŠ ã™ã‚‹
   glEnable( GL_LIGHTING );
   glEnable( GL_LIGHT0 );
 }
@@ -57,7 +57,7 @@ void CinderSampleApp::draw()
 	gl::clear( Color( 0, 0, 0 ) ); 
   gl::setMatrices( mCam );
 
-  // w‚ÌˆÊ’u‚ğ•\¦‚·‚é
+  // æŒ‡ã®ä½ç½®ã‚’è¡¨ç¤ºã™ã‚‹
   auto frame = mLeap.frame();
   for ( auto finger : frame.fingers() ) {
     gl::drawSphere( toVec3f( finger.tipPosition() ), 10 );
