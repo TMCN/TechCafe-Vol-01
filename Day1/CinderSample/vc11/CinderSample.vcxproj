@@ -78,7 +78,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\include;"..\..\cinder\cinder_0.8.5\include";"..\..\cinder\cinder_0.8.5\boost"</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;..\..\cinder\cinder_0.8.5\include;..\..\cinder\cinder_0.8.5\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -94,7 +94,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>cinder.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>"..\..\cinder\cinder_0.8.5\lib";"..\..\cinder\cinder_0.8.5\lib\msw"</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\cinder\cinder_0.8.5\lib;..\..\cinder\cinder_0.8.5\lib\msw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
