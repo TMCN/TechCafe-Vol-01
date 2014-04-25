@@ -3,6 +3,10 @@ TechCafe-Vol-01
 
 [Tokyo MotionControl Network tech-cafe Vol.01](http://kokucheese.com/event/index/157654/)で使用したコードです。
 
+##事後レポート
+
+ * [3夜連続 Leap Motionのワークショップを開催しました！TMCN tech cafe Vol.01 | ソフトウェア開発の株式会社システムフレンド](http://www.systemfriend.co.jp/node/559)
+
 ##Day1 関連情報
 
 スライド
