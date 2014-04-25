@@ -52,7 +52,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\include;..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\include;..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;..\..\cinder\cinder_0.8.5\include;..\..\cinder\cinder_0.8.5\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -63,11 +63,11 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>"..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\include";..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>"..\..\cinder\cinder_0.8.5\include";..\include</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>cinder_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\lib;..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\lib\msw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\cinder\cinder_0.8.5\lib;..\..\cinder\cinder_0.8.5\lib\msw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
@@ -78,7 +78,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\include;"..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\include";"..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\boost"</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;"..\..\cinder\cinder_0.8.5\include";"..\..\cinder\cinder_0.8.5\boost"</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -90,11 +90,11 @@
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>"..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\include";..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>"..\..\cinder\cinder_0.8.5\include";..\include</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>cinder.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>"..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\lib";"..\..\..\..\Documents\GitHub\LeapBookCpp\source\cinder\cinder_0.8.5\lib\msw"</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>"..\..\cinder\cinder_0.8.5\lib";"..\..\cinder\cinder_0.8.5\lib\msw"</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
