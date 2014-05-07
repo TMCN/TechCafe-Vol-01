@@ -6,7 +6,7 @@ TechCafe-Vol-01
 ##事後レポート
 
  * [3夜連続 Leap Motionのワークショップを開催しました！TMCN tech cafe Vol.01 | ソフトウェア開発の株式会社システムフレンド](http://www.systemfriend.co.jp/node/559)
- *[Leap Motionで誰もがつまずく「3D認識」の課題とは？ ― 3 daysカフェでのセッションより - Build Insider](http://www.buildinsider.net/small/tmcnreport/01)
+ * [Leap Motionで誰もがつまずく「3D認識」の課題とは？ ― 3 daysカフェでのセッションより - Build Insider](http://www.buildinsider.net/small/tmcnreport/01)
 
 ##Day1 関連情報
 
